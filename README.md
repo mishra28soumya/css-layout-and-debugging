@@ -77,3 +77,9 @@ AGENDA
 4. Debugging in CSS
 
 
+
+
+
+Jamboard link - https://jamboard.google.com/d/1s7A3EVDugHoVdMKxt37StFtRWWwBA32WqWyICNJBkf0/edit?usp=sharing
+
+
