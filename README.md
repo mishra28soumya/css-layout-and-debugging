@@ -1,83 +1,79 @@
-# css-layout-and-debugging
-
-
 AGENDA
---------
+-------
+1. Layouts (what, why) 
 
 
-1. Layouts (what, why)
+2. Flexbox layout => flexibly grow or shrink => window size
+
+     i. flex container => items (to be a flexbox layout)
+
+    ii. flex item => individual items
+
+    iii. main axis => in the direction of flex-direction
+
+    iv. cross axis => othrogonal to main axis
+
+    v. properties of the flex container
+
+        a. display => flex, inline-flex
+
+        b. justify-content => main-axis => flex-start, flex-end, center, space-around, space-between
+
+        c. align-items=> cross axis => flex-start, flex-end, center, baseline, stretch
 
 
-2. Flexbox layout
+        d. align-content => multi-line => flex-start, flex-end, center, space-between, space-around, stretch
 
-    1. Flex container
+        e. flex-direction => direction in which flex items will be placed (row, column)
 
-    2. Flex item
-
-    3. main axis
-
-    4. cross axis
-
-    5. Properties of flex container
-
-        a. display (flex, inline-flex)
-
-        a. justify-content (main-axis)
-            i. flex-start
-            ii. flex-end
-            iii. center
-            iv. space-around
-            v. space-between
-
-        b. align-items (cross-axis)
-            i. flex-start
-            ii. flex-end
-            iii. center
-            iv. basline
-            v. stretch
-
-        c. flex-wrap (main-axis)
-            i. wrap
-            ii. wrap-reverse
-            iii. no-wrap(default)
-
-        d. align-content (only for multiline) (cross-axis)
-            i. flex-start
-            ii. flex-end
-            iii. center
-            iv. space-between
-            v. space-around
-            vi. stretch
-
-        e. flex-direction
-            i. row
-            ii. row-reverse
-            iii. column
-            iv. column-reverse
-
-    6. Properties of flex item
-        a. flex-grow (main-axis)
-        b. flex-shrink (main-axis)
-        c. flex-basis
+        f. flex-wrap => main-axis => wrap, no-wrap(default), reverse-wrap
 
 
-3. Grid layout
-    1. Grid container
-    2. Grid item
-    3. Display (inline-grid, grid)
-    4. grid-template-rows
-    5. grid-template-columns
-    6. grid-template
-    7. fr unit
-    8. repeat()
-    9. minmax()
-    10. grid gap
-    11. Multiple row/column items
-        a. grid-row-start
-        b. grid-row-end
-        c. grid-column-start
-        d. grid-column-end
-        e. grid area
+
+    vi. properties of the flex item
+    
+        a. flex-grow
+        
+        b. flex-shrink
+        
+        c. flex-basis => what should be the width before growing or shrinking
+
+3. Grid Layout
+
+    i. grid container
+    
+    ii. grid item
+    
+    iii. display => grid or inline-grid
+
+    iv. grid-template-rows => how many rows
+
+    v. grid-template-columns => how many columns (px,)
+
+    vi. grid-template => shorthand => [row] / [column]
+
+    vii. fr unit => fr 
+
+    viii. repeat(arg1, arg2) =>  arg1 -> how many times you want to repeat; arg2-> the value you want to repeat
+
+    ix. minmax(min, max)
+
+    x. grid gap => gap between rows and columns
+    
+        grid-row-gap
+        
+        grid-column-gap
+        
+        grid-gap
+
+    xi. Multiple row/column
+    
+        a. grid-row-start/end
+        
+        b. grid-column-start/end
+        
+        c. grid area [row-start]/[column-start]/[row-end]/[column-end]
 
 4. Debugging in CSS
+
 
