@@ -1,0 +1,53 @@
+.grid-container {
+    
+    background-color:cadetblue;
+    height:500px;
+    display: grid;
+
+    /* column sizes we want */
+    /* grid-template-columns:200px 100px ; */
+    grid-template-columns:2fr 1fr;
+    /* grid-template-columns: repeat(4, 100px); */
+
+    /* this means 2 rows of 100px each */
+    /* grid-template-rows: 100px 100px; */
+    /* If you dont know how may rows use grid-auto-row for undefined rows */
+   /* grid-auto-rows: 150px; */
+
+   /* grid row and grid column can be merged in grid-template */
+   /* values before slash determine size of each row and after slash determine column */
+   /* grid-template: 100px 200px/500px 500px 500px */
+
+   /* adds space between the rows */
+   grid-row-gap:10px;
+
+    /* adds space between the columns */
+    grid-column-gap:10px;
+
+    /* shorthand for grid row and col gap */
+    /* grid-gap: 10px; */
+    /* applies 10px gap in both row and column*/
+  }
+  
+  .grid-container > div {
+    background-color:burlywood;
+    border: 1px solid black;
+
+    /* spread your item across several rows */
+    /* grid-row-start: 1;
+    grid-row-end: 1 */
+  }
+
+  .grid-item1 {
+    grid-column-start:1 ;
+    grid-column-end:3; /* -1 corresponds to the last column */
+  }
+
+  .grid-item2{
+    grid-row-start:2;
+    grid-row-end: 4;
+  }
+
+  .grid-item3 {
+    grid-area:2/2/4/3
+  }

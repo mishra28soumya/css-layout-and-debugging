@@ -1,0 +1,41 @@
+.flex-container {
+  background-color: yellow;
+    display: flex;
+    /* height: 1000px; */
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* Flex wrap - used to move items to the next line */
+    flex-wrap:wrap;
+    /* align content - useful in case of multiple row of items in flex container */
+    align-content: flex-start;
+    /* width: 200px; */
+    flex-direction: row;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width:200px
+  }
+
+  .flexbox-item-1 {
+    height:150px;
+    flex-grow: 1;
+    flex-shrink:0;
+    /* Flex basis allows us to specify wodth of an item before it grows or shrinks */
+    flex-basis:200px;
+    
+  }
+
+  .flexbox-item-2 {
+    height:300px;
+    flex-grow: 2;
+  }
+
+  .flexbox-item-3 {
+    height:500px;
+    flex-grow: 1;
+  }
